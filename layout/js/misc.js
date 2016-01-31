@@ -79,6 +79,7 @@ sendStudent = function() {
       student: student,
       phone: studentPhone,
       email: studentEmail,
+      status: "new",
       date: currentdate.toString()
     };
 
@@ -163,7 +164,7 @@ sendStudent = function() {
           }],
           'autotext': 'true',
           'subject': "19aaea01ce64bec8 79268613375", //заменить на телефон школы
-          'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучене! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
+          'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучение! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
         }
       }
     }).done(function(response) {}).fail(function(error) {
@@ -175,12 +176,14 @@ sendStudent = function() {
     if (!window.error) {
       swal({
         title: "Спасибо",
-        text: "Ваша заявка успешно отправлена!<br>В ближайшее время Вам перезвонит сотрудник школы.<br><br><span style='display: block;'><img style='width: 16px;' src='images/vk.png'> <a target='_blank'  href='https://vk.com/rostov.english'>Подписывайтесь на сообщество Английский в Ростове</a>,</span><br>чтобы быть в курсе всех новостей про изучение английского языка в нашем городе.",
+        text: student + ", Ваша заявка успешно отправлена!<br>В ближайшее время Вам перезвонит сотрудник школы.<br><br><span style='display: block;'><img style='width: 16px;' src='images/vk.png'> <a target='_blank'  href='https://vk.com/rostov.english'>Подписывайтесь на сообщество Английский в Ростове</a>,</span><br>чтобы быть в курсе всех новостей про изучение английского языка в нашем городе.",
         type: "success",
         animation: "slide-from-top",
         html: true
       });
       //yaCounterSuccess + yaCounterVKClick
+
+      $('#application').html("Ваша заявка успешно отправлена!<br>В ближайшее время Вам перезвонит сотрудник школы.<br>");
     }
 
   } else {
