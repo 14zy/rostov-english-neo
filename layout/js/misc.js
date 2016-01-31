@@ -191,3 +191,39 @@ sendStudent = function() {
     //yaCounterFail
   }
 };
+
+
+addSchool = function() {
+  jQuery.ajax({
+    type: "POST",
+    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+    data: {
+      'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
+      'message': {
+        'from_email': 'robot@rostov-english.ru',
+        'from_name': 'Rostov-English.ru',
+        'to': [{
+          'email': "info@rostov-english.ru",
+          'name': "",
+          'type': 'to'
+        }],
+        'autotext': 'true',
+        'subject': "Заявка на добавление школы",
+        'html': "Поступила заявка на добавление школы на сайт:<br><br>Школа: " + $('#inputSchoolName').val() + "<br>Сайт: " + $('#inputSchoolSite').val() + "<br>E-mail: " + $('#inputSchoolEmail').val() + "<br>Контактное лицо: " + $('#inputSchoolManager').val() + "<br>Телефон: " + $('#inputSchoolManagerPhone').val()
+      }
+    }
+  }).done(function(response) {
+    swal({
+      title: "Спасибо",
+      text: $('#inputSchoolManager').val() + ", заявка на добавление школы успешно отправлена!<br>В ближайшее время мы свяжемся с Вами для уточнения деталей.",
+      type: "success",
+      animation: "slide-from-top",
+      html: true
+    });
+    $('#addSchoolForm').css("display", "none");
+  }).fail(function(error) {
+    window.error = true;
+    swal("Ошибка", 'Произошла ошибка при попытке отправить уведомление на info@rostov-english.ru, пожалуйста, сообщите об этом администрации сайта', "error");
+    console.log(error);
+  });
+};
