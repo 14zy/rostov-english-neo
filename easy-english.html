@@ -156,6 +156,10 @@
               <a href="sovremennik.html" title='Современник'>Современник</a>
             </li>
           
+            <li>
+              <a href="englishok.html" title='Школа английского языка English?-OK!'>English?-OK!</a>
+            </li>
+          
         </ul>
       </li>
       <li>
@@ -247,6 +251,9 @@
 
 
 <script>
+
+  var vk = "52119228";
+
   VK.Widgets.Group("vk_groups2", {
     mode: 0,
     width: "192",
@@ -254,7 +261,8 @@
     color1: 'FFFFFF',
     color2: '2B587A',
     color3: '5B7FA6'
-  }, 52119228);
+  }, vk);
+
 </script>
 
 <div class="widget widget-application rounded-10">
@@ -284,6 +292,46 @@
         </div>
 
         <div class="rounded-10" id="content">
+
+          <div id="application">
+
+
+
+            <h2>Бесплатное пробное занятие в Easy English!</h2>
+
+            <br><br>
+
+
+            <label class='labelInput'>Ваше имя: </label>
+            <input class='appInput' id="inputName" title="Ваше имя" type="text">
+
+            <br><br>
+
+            <label class='labelInput'>Email: </label>
+            <input class='appInput' id="inputEmail" title="Email" type="email">
+
+            <br><br>
+
+            <label class='labelInput'>Телефон: </label>
+            <input class='appInput' id="inputPhone" placeholder="+7" title="Телефон" type="tel">
+
+            <br><br><br>
+
+            <div class='gift'><a onclick='sendStudent()' id='btnSend'>Получить</a><img src='images/gift.png'></div>
+            <br>
+            Через сайт записалось уже 203 студента
+
+            <br><br>
+
+            <div>
+              <h3>В бесплатное занятие входит:</h3>
+              <li>Тестирование, с целью выявления текущего уровня английского.</li>
+              <li>1 академический час занятий английским языком в группе.</li>
+            </div>
+
+            <img style='float: right; background: none!important; margin-top: -220px; width: 300px' src='images/offer/siberian_0R4X9692.png'>
+
+        </div>
 
           <h2 class="title" id='txtTitle'>Центр Европейских Языков "EASY ENGLISH"</h2>
 
@@ -366,38 +414,7 @@ Cлушатели, прошедшие полный курс в Easy English, а�
 </li>
 
 
-          <div id="application">
-            <div class='gift'><img src='images/gift.png'></div>
-            <h2>Заявка на пробное бесплатное занятие</h2>
 
-            <br><br>
-
-            <label class='labelInput'>Ваше имя: </label>
-            <input class='appInput' id="inputName" title="Ваше имя" type="text">
-
-            <br><br>
-
-            <label class='labelInput'>Email: </label>
-            <input class='appInput' id="inputEmail" title="Email" type="email">
-
-            <br><br>
-
-            <label class='labelInput'>Телефон: </label>
-            <input class='appInput' id="inputPhone" placeholder="+7" title="Телефон" type="tel">
-
-            <br><br><br>
-
-            <a onclick='sendStudent()' id='btnSend'>Готово</a>
-
-            <br><br>
-
-            <div>
-              <h3>В бесплатное занятие входит:</h3>
-              <li>Тестирование, с целью выявления текущего уровня английского.</li>
-              <li>1 академический час занятий английским языком в группе.</li>
-            </div>
-
-        </div>
 
         <div class="rounded-10" id="address">
           <h3 style='padding-bottom:10px'>Центр Европейских Языков "EASY ENGLISH" на карте:</h3>
