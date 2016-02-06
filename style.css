@@ -17,7 +17,7 @@ body {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 	font-size: 12px;
 	font-weight: normal;
-	line-height: 140%;
+	/*line-height: 140%;*/
 }
 
 /* STANDARD TYPOGRAPHY */
@@ -1146,3 +1146,11 @@ ul.jaybich-recent-posts li a {
 #addSchoolPad:hover {
   cursor: pointer;
 }
+
+#content p, li{
+  font-size: 14px;
+}
+
+/*#content p, li{
+  line-height: 18px;
+}*/
