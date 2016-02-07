@@ -61,7 +61,6 @@ function isEmail(email) {
 
 
 //Отправка формы
-
 sendStudent = function() {
   if (isEmail($("#inputEmail").val()) && $("#inputName").val() !== "" && $("#inputPhone").val() !== "") {
 
@@ -123,6 +122,7 @@ sendStudent = function() {
       console.log(error);
     });
 
+
     //Email школе
     jQuery.ajax({
       type: "POST",
@@ -133,7 +133,7 @@ sendStudent = function() {
           'from_email': 'robot@rostov-english.ru',
           'from_name': 'Rostov-English.ru',
           'to': [{
-            'email': "rybik@yandex.ru", //замениить на email школы
+            'email': window.schoolEmail,
             'name': "",
             'type': 'to'
           }],
@@ -163,7 +163,7 @@ sendStudent = function() {
             'type': 'to'
           }],
           'autotext': 'true',
-          'subject': "19aaea01ce64bec8 79268613375", //заменить на телефон школы
+          'subject': "19aaea01ce64bec8 " + window.schoolSMS, 
           'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучение! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
         }
       }
