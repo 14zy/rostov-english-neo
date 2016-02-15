@@ -124,54 +124,58 @@ sendStudent = function() {
 
 
     //Email школе
-    jQuery.ajax({
-      type: "POST",
-      url: "https://mandrillapp.com/api/1.0/messages/send.json",
-      data: {
-        'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
-        'message': {
-          'from_email': 'robot@rostov-english.ru',
-          'from_name': 'Rostov-English.ru',
-          'to': [{
-            'email': window.schoolEmail,
-            'name': "",
-            'type': 'to'
-          }],
-          'autotext': 'true',
-          'subject': "Новая заявка с сайта Rostov-English.ru",
-          'html': "В Вашу школу поступила новая заявка:<br><br>Имя: " + student + "<br>Телефон: " + studentPhone + "<br>E-mail: " + studentEmail + "<br>Дата: " + currentdate + "<br><br>Пожалуйста, перезвоните клиенту в ближайшее время, чтобы уточнить удобное время посещения.<br><br>__<br>Пожалуйста, не отвечайте на это письмо, по вопросам работы сайта Rostov-English.ru вы можете обращаться на info@rostov-english.ru"
+    if (window.schoolEmail !== "" ) {
+      jQuery.ajax({
+        type: "POST",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        data: {
+          'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
+          'message': {
+            'from_email': 'robot@rostov-english.ru',
+            'from_name': 'Rostov-English.ru',
+            'to': [{
+              'email': window.schoolEmail,
+              'name': "",
+              'type': 'to'
+            }],
+            'autotext': 'true',
+            'subject': "Новая заявка с сайта Rostov-English.ru",
+            'html': "В Вашу школу поступила новая заявка:<br><br>Имя: " + student + "<br>Телефон: " + studentPhone + "<br>E-mail: " + studentEmail + "<br>Дата: " + currentdate + "<br><br>Пожалуйста, перезвоните клиенту в ближайшее время, чтобы уточнить удобное время посещения.<br><br>__<br>Пожалуйста, не отвечайте на это письмо, по вопросам работы сайта Rostov-English.ru вы можете обращаться на info@rostov-english.ru"
+          }
         }
-      }
-    }).done(function(response) {}).fail(function(error) {
-      window.error = true;
-      swal("Ошибка", 'Произошла ошибка при попытке отправить уведомление в школу ' + window.schoolName + ', пожалуйста, сообщите об этом администрации сайта', "error");
-      console.log(error);
-    });
+      }).done(function(response) {}).fail(function(error) {
+        window.error = true;
+        swal("Ошибка", 'Произошла ошибка при попытке отправить уведомление в школу ' + window.schoolName + ', пожалуйста, сообщите об этом администрации сайта', "error");
+        console.log(error);
+      });
+    }
 
     //SMS школе
-    jQuery.ajax({
-      type: "POST",
-      url: "https://mandrillapp.com/api/1.0/messages/send.json",
-      data: {
-        'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
-        'message': {
-          'from_email': 'robot@rostov-english.ru',
-          'from_name': 'Rostov-English.ru',
-          'to': [{
-            'email': "sms@massreach.com",
-            'name': "",
-            'type': 'to'
-          }],
-          'autotext': 'true',
-          'subject': "19aaea01ce64bec8 " + window.schoolSMS, 
-          'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучение! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
+    if (window.schoolSMS !== "") {
+      jQuery.ajax({
+        type: "POST",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        data: {
+          'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
+          'message': {
+            'from_email': 'robot@rostov-english.ru',
+            'from_name': 'Rostov-English.ru',
+            'to': [{
+              'email': "sms@massreach.com",
+              'name': "",
+              'type': 'to'
+            }],
+            'autotext': 'true',
+            'subject': "19aaea01ce64bec8 " + window.schoolSMS,
+            'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучение! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
+          }
         }
-      }
-    }).done(function(response) {}).fail(function(error) {
-      window.error = true;
-      swal("Ошибка", 'Произошла ошибка при попытке отправить смс-уведомление в школу ' + window.schoolName + ', пожалуйста, сообщите об этом администрации сайта', "error");
-      console.log(error);
-    });
+      }).done(function(response) {}).fail(function(error) {
+        window.error = true;
+        swal("Ошибка", 'Произошла ошибка при попытке отправить смс-уведомление в школу ' + window.schoolName + ', пожалуйста, сообщите об этом администрации сайта', "error");
+        console.log(error);
+      });
+    }
 
     if (!window.error) {
       swal({

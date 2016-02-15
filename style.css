@@ -1093,6 +1093,7 @@ ul.jaybich-recent-posts li a {
 .appInput {
   font-size: 18px;
   line-height: 18px;
+  width: 250px;
 }
 
 #btnSend {
@@ -1104,7 +1105,7 @@ ul.jaybich-recent-posts li a {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 100px;
+  width: 300px;
 }
 
 #btnSend:hover {
