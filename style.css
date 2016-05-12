@@ -729,7 +729,7 @@ a.active:hover {
   padding: 10px 10px 10px 10px;
 }
 
-#slideshow img{
+#slideshow-wrapper-page img {
   width: 660px!important
 }
 
