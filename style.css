@@ -729,6 +729,10 @@ a.active:hover {
   padding: 10px 10px 10px 10px;
 }
 
+#slideshow img{
+  width: 660px!important
+}
+
 #action img {
   margin-left: 220px;
 }
