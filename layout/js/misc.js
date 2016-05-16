@@ -151,31 +151,31 @@ sendStudent = function() {
     }
 
     //SMS школе
-    if (window.schoolSMS !== "") {
-      jQuery.ajax({
-        type: "POST",
-        url: "https://mandrillapp.com/api/1.0/messages/send.json",
-        data: {
-          'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
-          'message': {
-            'from_email': 'robot@rostov-english.ru',
-            'from_name': 'Rostov-English.ru',
-            'to': [{
-              'email': "sms@massreach.com",
-              'name': "",
-              'type': 'to'
-            }],
-            'autotext': 'true',
-            'subject': "19aaea01ce64bec8 " + window.schoolSMS,
-            'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучение! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
-          }
-        }
-      }).done(function(response) {}).fail(function(error) {
-        window.error = true;
-        swal("Ошибка", 'Произошла ошибка при попытке отправить смс-уведомление в школу ' + window.schoolName + ', пожалуйста, сообщите об этом администрации сайта', "error");
-        console.log(error);
-      });
-    }
+    // if (window.schoolSMS !== "") {
+    //   jQuery.ajax({
+    //     type: "POST",
+    //     url: "https://mandrillapp.com/api/1.0/messages/send.json",
+    //     data: {
+    //       'key': 'pyL7NQYaVCP7PkkLq0BnSQ',
+    //       'message': {
+    //         'from_email': 'robot@rostov-english.ru',
+    //         'from_name': 'Rostov-English.ru',
+    //         'to': [{
+    //           'email': "sms@massreach.com",
+    //           'name': "",
+    //           'type': 'to'
+    //         }],
+    //         'autotext': 'true',
+    //         'subject': "19aaea01ce64bec8 " + window.schoolSMS,
+    //         'html': "[SENDER]RosEnglish[/SENDER][SMS]Новая заявка на обучение! Имя: " + student + ", телефон: " + studentPhone + "[/SMS]"
+    //       }
+    //     }
+    //   }).done(function(response) {}).fail(function(error) {
+    //     window.error = true;
+    //     swal("Ошибка", 'Произошла ошибка при попытке отправить смс-уведомление в школу ' + window.schoolName + ', пожалуйста, сообщите об этом администрации сайта', "error");
+    //     console.log(error);
+    //   });
+    // }
 
     if (!window.error) {
       swal({
