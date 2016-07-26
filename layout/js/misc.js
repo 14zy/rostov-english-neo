@@ -34,6 +34,11 @@ VK.init({
 })(document, window, "yandex_metrika_callbacks");
 
 $(function() {
+
+  if (window.schoolEmail == "") {
+    $('#application').css('display', 'none');
+  }
+
   $('#slideshow').cycle({
     fx: 'fade',
     timeout: 6000,
@@ -58,6 +63,8 @@ function isEmail(email) {
     return false;
   }
 }
+
+
 
 
 //Отправка формы
