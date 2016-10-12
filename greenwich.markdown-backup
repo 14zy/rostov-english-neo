@@ -4,21 +4,21 @@
   <head>
   <!-- ////////////////// HEAD ///////////////// -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Школа английского языка English?-OK! – Английский язык в Ростове-на-Дону</title>
+  <title>Greenwich Club – Английский язык в Ростове-на-Дону</title>
 
-  <link rel="canonical" href="http://rostov-english.ru/englishok.html" />
-  <meta property="og:url" content="http://rostov-english.ru/englishok.html" />
+  <link rel="canonical" href="http://rostov-english.ru/greenwich.html" />
+  <meta property="og:url" content="http://rostov-english.ru/greenwich.html" />
 
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <link rel='image_src' href="http://rostov-english.ru/englishok/images/logo.png">
-  <meta property="og:image" content="http://rostov-english.ru/englishok/images/logo.png" />
+  <link rel='image_src' href="http://rostov-english.ru/greenwich/images/logo.png">
+  <meta property="og:image" content="http://rostov-english.ru/greenwich/images/logo.png" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content='Школа английского языка English?-OK! – Английский язык в Ростове-на-Дону' />
+  <meta property="og:title" content='Greenwich Club – Английский язык в Ростове-на-Дону' />
   <meta property="og:site_name" content="Английский язык в Ростове-на-Дону" />
-  <meta name="title" content='Школа английского языка English?-OK! – Английский язык в Ростове-на-Дону' />
+  <meta name="title" content='Greenwich Club – Английский язык в Ростове-на-Дону' />
 
   <meta name="description" content="Rostov-English.ru - это надёжный источник информации для людей, желающих изучать английский язык в Ростове-на-Дону." />
   <meta property="og:description" content="Rostov-English.ru - это надёжный источник информации для людей, желающих изучать английский язык в Ростове-на-Дону." />
@@ -200,21 +200,21 @@
         <div id="sidebar">
           <div class="widget rounded-10">
 
-  <img id='imgLogo' src="englishok/images/logo.png" width="190px" alt='Школа английского языка English?-OK! логотип'>
+  <img id='imgLogo' src="greenwich/images/logo.png" width="190px" alt='Greenwich Club логотип'>
   <p>
     <strong>Дата основания:</strong>
-    <text id="txtYear">1995</text> год</p>
+    <text id="txtYear">2011</text> год</p>
   <p>
     <strong>Адрес:</strong>
-    <a href="#address"><text id="txtAddress1">ул. Социалистическая 74, офис 402</text></a>
+    <a href="#address"><text id="txtAddress1">ул. Пушкинская, д. 104/32</text></a>
   </p>
   <p>
     <strong>Телефон:</strong>
-    <a id="linkPhone" href="tel:+78632949382"><text id="txtPhone">294-93-82</text></a>
+    <a id="linkPhone" href="tel:+78632217151"><text id="txtPhone">221-71-51</text></a>
   </p>
   <p>
     <strong>Сайт:</strong>
-    <a target='_blank' id="linkWebsite" href="http://www.englishok.ru"><text id="txtWebsite">www.englishok.ru</text></a>
+    <a target='_blank' id="linkWebsite" href="http://www.greenwichclub.ru"><text id="txtWebsite">www.greenwichclub.ru</text></a>
   </p>
   <p>
     <strong>Проголосовать:</strong>
@@ -261,7 +261,7 @@
 
 <script>
 
-  var vk = "";
+  var vk = "30009464";
 
   VK.Widgets.Group("vk_groups2", {
     mode: 0,
@@ -276,6 +276,11 @@
 
 
 
+  <div class="widget widget-application rounded-10">
+    <h2>Мы ВКонтакте</h2>
+    <div id="vk_groups2"></div>
+  </div>
+
 
 
 
@@ -283,7 +288,7 @@
   <h2>Отзывы</h2>
   <p>Отзывов пока нет.</p>
   <p>
-    <a id='addReview' href="mailto:info@rostov-english.ru?subject=Отзыв%20на%20English?-OK!&body=Ваше%20имя:%0AОтзыв:">Добавить отзыв</a>
+    <a id='addReview' href="mailto:info@rostov-english.ru?subject=Отзыв%20на%20Greenwich Club&body=Ваше%20имя:%0AОтзыв:">Добавить отзыв</a>
   </p>
 
 </div>
@@ -291,10 +296,10 @@
 
 
 <script>
-  window.school = "englishok";
-  window.schoolName = "English?-OK!";
-  window.schoolEmail = "info@englishok.ru";
-  window.schoolSMS = "79185549382";
+  window.school = "greenwich";
+  window.schoolName = "Greenwich Club";
+  window.schoolEmail = "sergey@greenwichclub.ru";
+  window.schoolSMS = "79185247858";
 </script>
 
         </div>
@@ -303,49 +308,63 @@
 
 
           <br>
-          <h2 class="title" id='txtTitle'>Школа английского языка English?-OK!</h2>
+          <h2 class="title" id='txtTitle'>Greenwich Club</h2>
 
-          <div style='padding: 10px 10px 20px 10px'><p>В школе английского языка «English? - OK!» с 1995 года мы обучили уже более 15000 человек. Выпускники «English?-OK!» получили престижную работу, поступили в лучшие ВУЗы России и за рубежом, сдали международные языковые экзамены (TOEFL, IELTS и другие) и выехали за границу на постоянное место жительства.</p>
+          <div style='padding: 10px 10px 20px 10px'>Языковой клуб Greenwich Club начал свою работу в 2011 года в самом центре Ростова-на-Дону.
 
-<p>В нашей школе «English?-OK!» курсы английского построены таким образом, что обучаться могут люди разного возраста и разной языковой подготовки. Здесь есть и начальный курс для тех, кто только познает азы этого международного языка, а есть курсы английского для владеющих языком на более высоком уровне. Каждый желающий может выбрать любой из курсов обучения, начиная с «нуля» до свободного владения.</p>
+Клуб занимается ускоренным обучением английскому языку, обучением испанскому и итальянскому языкам.
+
+Многие считают, что нужно потратить годы на то, чтобы выучить английский язык. Это слишком сложно, долго и дорого.
+
+В Greenwich Club знают как сократить срок изучения языка в 2 раза, сэкономить до 60% от стоимости обучения и получать удовольствие от общения на английском.
 
 <div id="slideshow-wrapper-page">
 <div id="slideshow">
-<img src="englishok/images/photo1.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo2.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo3.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo4.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo5.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo6.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo7.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo8.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-<img src="englishok/images/photo9.jpg" alt="Фотография языкового центра 'English?-OK!'" title="Фотографии школы английского языка English?-OK!" width="670" />
-
+<img src="greenwich/images/photo1.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo3.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo4.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo5.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo6.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670" >
+<img src="greenwich/images/photo7.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo8.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo9.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
+<img src="greenwich/images/photo10.jpg" alt="Фотография Greenwich Club" title="Фотографии Greenwich Club" width="670">
 </div>
 </div>
 
-<p>Уроки английского языка ведут дипломированные зарубежные и российские преподаватели, для которых он является родным языком. Заниматься с носителем языка не только модно и престижно. Такие уроки позволяют усвоить язык безупречно и говорить без акцента.</p>
+Как известно, степень владения английским делится на 6 уровней — от нулевого до свободного владения.
 
-<p>Обучение английскому языку в школе «English?-OK!» - залог получения качественного образования или высокооплачиваемой работы, ведения успешного бизнеса с иностранными партнерами и свободного общения за рубежом.</p>
+Обычно, прохождение 1 уровня английского занимает 6—7 месяцев.
 
-<p>Хотите пройти стажировку по иностранному языку, не выезжая за границу, а также начать говорить и понимать? - тогда Вам именно к нам!</p>
+С помощью особой клубной системы занятий вы сможете пройти 1 уровень в 2 раза быстрее — за 3 месяца.
 
-<p>Наша главная задача - помочь всем желающим овладеть английским языком. Слушатели успешно проходят всю программу обучения. Таких результатов мы добиваемся благодаря следующим принципам работы:</p>
+Как это работает?
 
-<ul>
-  <li>Индивидуальный подход к каждому клиенту</li>
-  <li>Преодоление языкового барьера</li>
-  <li>Незаменимая практика речи с носителями языка</li>
-  <li>Все стадии обучения: от нуля до высшего</li>
-  <li>Широкий выбор программ</li>
-</ul>
+1. Оптимизированная методика. Упор на разговорный язык, четкая грамматика, оптимальная структура и продолжительность занятия. Ничего лишнего.
+2. Грамотные преподавателя. Настоящие профессионалы и энтузиасты своего дела.
+3. Постоянный мониторинг прогресса. Ваши результаты оцениваются по 7 показателям и находятся на контроле.
+4. Восполнение пропущенных занятий. Пропустили занятие? Система позволит вам наверстать упущенное без потерь.
+5. Практика с носителями языка. Делает изучение языка еще более эффективным.
+6. 100% гарантия результата.
+
+Для своих студентов Greenwich Club регулярно проводиn английские киноклубы вместе с кофейней “Питькофе” и разговорные встречи с носителями языка вместе с кофейней Starbucks.
+
+Факты о Greenwich Club:
+
+1. Открытие 9 сентября 2011
+2. Более 700 довольных студентов
+3. Организовали 7 групповых поездок в Лондон для 68 человек.
+4. Клубу доверили обучение своих сотрудников ЗАРА СНГ, РОСБАНК, БАНК ВТБ, ИНДУСТРИЯ КРАСОТЫ, ААА МОТОРС и др.
+5. Организовали и провели множество уникальных мероприятий, среди них: мастер-классы по изучению языков, кулинарные и гастрономические воркшопы, семинар совместно с ведущим кадровым агентством, киноклубы и даже виски-мастер-классы!
+
+Запишитесь на пробное занятие прямо сейчас! Завтра значит никогда!
 </div>
 
           <br>
           <div id="application">
             <img style='float: left; background: none!important; margin: -70px 0px 0px -20px;' src='images/cut_line.png'>
 
-            <h2 style='line-height: 28px'>Заявка на бесплатное тестовое занятие в English?-OK!:</h2>
+            <h2 style='line-height: 28px'>Заявка на бесплатное тестовое занятие в Greenwich Club:</h2>
 
             <br>
 
@@ -389,12 +408,12 @@
 
 
         <div class="rounded-10" id="address">
-          <h3 style='padding-bottom:10px'>Школа английского языка English?-OK! на карте:</h3>
-          <script charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=kSScAiCJDye1xipwwZw5NTESA0_cOWn9&width=680&height=300" type="text/javascript"></script>
+          <h3 style='padding-bottom:10px'>Greenwich Club на карте:</h3>
+          <script charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=eXDNWcEY0A3wyvPQyEThnyKL1_r7etPQ&width=680&height=300" type="text/javascript"></script>
 
             <p><strong>Адрес:</strong>
             г.Ростов-на-Дону,
-            ул. Социалистическая 74, офис 402</p>
+            ул. Пушкинская, д. 104/32</p>
 
             
 
